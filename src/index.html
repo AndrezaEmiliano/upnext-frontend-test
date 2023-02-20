@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+  <head>
+    <title>YpNext FrontEnd Test - Greenthumb</title>
+
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="icon" href="./assets/images/icons/logo-black.svg" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles/index.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__logo">
+        <img src="assets/images/icons/logo-white.svg" alt="Green thumb logo" />
+
+        <h1 class="slogan">Find your next green friend</h1>
+
+        <img src="assets/images/icons/arrow-down.svg" alt="Arrow down" />
+      </div>
+    </header>
+
+    <main class="wrapper">
+      <section class="filters">
+        <div>
+          <img src="assets/images/illustrations/sun.png" alt="Sun" />
+          <p>
+            <strong>1.</strong> Set the amount of <strong>sunlight</strong> your
+            plant will get.
+          </p>
+          <select id="sunlight-field" class="select">
+            <option value="" disabled selected hidden>Select...</option>
+            <option value="no">No</option>
+            <option value="low">Low</option>
+            <option value="high">High</option>
+          </select>
+        </div>
+
+        <div>
+          <img
+            class="inverter"
+            src="assets/images/illustrations/wateringcan.png"
+            alt="Watering can"
+          />
+          <p>
+            <strong>2.</strong> How often do you want to
+            <strong>water</strong> your plant?
+          </p>
+          <select id="water-field" class="select">
+            <option value="" disabled selected hidden>Select...</option>
+            <option value="regularly">Regularly</option>
+            <option value="daily">Daily</option>
+            <option value="rarely">Rarely</option>
+          </select>
+        </div>
+
+        <div>
+          <img src="assets/images/illustrations/dog.png" alt="Dog" />
+          <p>
+            <strong>3.</strong> Do you have pets? Do they
+            <strong>chew</strong> plants?
+          </p>
+          <select id="pet-field" class="select">
+            <option value="" disabled selected hidden>Select...</option>
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+          </select>
+        </div>
+      </section>
+
+      <section id="results" class="results"></section>
+    </main>
+  </body>
+
+  <script type="module" src="./js/app.js"></script>
+</html>
